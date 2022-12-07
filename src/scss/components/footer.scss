@@ -1,0 +1,70 @@
+.footer {
+  padding-bottom: 50px;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content-left {
+  &__link {
+    font-family: "PP Mori";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: block;
+
+    color: $white;
+  }
+}
+
+.footer-content-list {
+  display: flex;
+  gap: 30px;
+  &__item {
+  }
+
+  &__link {
+    font-family: "PP Mori";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+
+    color: $white-05;
+  }
+}
+
+.footer-content-right {
+  display: flex;
+  flex-direction: column;
+
+  &__link {
+    font-family: "PP Mori";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: right;
+    text-transform: uppercase;
+
+    color: $white;
+
+    &--color {
+      color: $white-05;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

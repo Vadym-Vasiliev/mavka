@@ -1,0 +1,24 @@
+.main {
+  padding-top: 310px;
+  padding-bottom: 505px;
+}
+
+.main-content {
+  &__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 1.06;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+  }
+}

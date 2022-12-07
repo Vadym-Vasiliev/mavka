@@ -1,0 +1,57 @@
+.about {
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+}
+
+.about-content-left {
+  &__content {
+    max-width: 325px;
+    margin-right: 115px;
+  }
+
+  &__title {
+    font-family: "PP Mori";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 1.12;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  &__text {
+    font-family: "PP Mori";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+  }
+}
+.about-content-center {
+  &__img {
+    width: 410px;
+  }
+}
+
+.about-content-right {
+  display: flex;
+  &__text {
+    font-family: "PP Mori";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.56;
+    letter-spacing: -0.03em;
+    max-width: 300px;
+    margin-top: auto;
+    margin-left: 140px;
+
+    color: $gray;
+  }
+}

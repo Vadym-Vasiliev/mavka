@@ -2,8 +2,19 @@ html
   head 
     include html/head
   body 
-    include html/header
-    main
-    include html/footer
+    .wrapper
+      include html/header
+      main
+        include html/main
+        include html/line
+        include html/about
+        include html/services
+        include html/soft
+        include html/line-bot
+        include html/instruments
+        include html/experience
+        include html/also
+
+      include html/footer
     script(src="js/app.min.js")
 

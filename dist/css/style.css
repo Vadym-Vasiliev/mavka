@@ -1,0 +1,774 @@
+/*! modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+:root {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+Sections
+========
+*/
+/**
+Remove the margin in all browsers.
+*/
+body {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/*
+Grouping content
+================
+*/
+/**
+Add the correct height in Firefox.
+*/
+hr {
+  height: 0;
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Correct the padding in Firefox.
+*/
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+button {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "PP Mori";
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 1.12;
+  text-transform: uppercase;
+}
+
+.header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-content__list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header-content__link {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.main {
+  text-align: center;
+  padding-top: 140px;
+  padding-bottom: 100px;
+}
+
+.main-content__name {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 1.06;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.main-content__text {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.line-content__text {
+  font-family: "Ogg";
+  font-style: italic;
+  font-weight: 260;
+  font-size: 170px;
+  line-height: 1;
+  text-transform: lowercase;
+}
+
+.about {
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+}
+
+.about-content-left__content {
+  max-width: 325px;
+  margin-right: 115px;
+}
+.about-content-left__title {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 1.12;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.about-content-left__text {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.about-content-center__img {
+  width: 410px;
+}
+
+.about-content-right {
+  display: flex;
+}
+.about-content-right__text {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.56;
+  letter-spacing: -0.03em;
+  max-width: 300px;
+  margin-top: auto;
+  margin-left: 140px;
+  color: #cecdcc;
+}
+
+.services {
+  padding-bottom: 495px;
+}
+
+.services-content-top__title {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  max-width: 585px;
+  margin-bottom: 390px;
+}
+
+.services-content-list {
+  display: flex;
+  justify-content: space-between;
+}
+.services-content-list__item {
+  max-width: 525px;
+}
+.services-content-list__second-list {
+  margin-bottom: 50px;
+}
+.services-content-list__second-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.services-content-list__text {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.56;
+  text-transform: uppercase;
+}
+.services-content-list__title {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.services-content-list__contact {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.soft {
+  padding-bottom: 100px;
+}
+
+.soft-content {
+  display: flex;
+}
+.soft-content__title {
+  margin-right: 450px;
+}
+
+.soft-content-list__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.soft-content-list__text {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.56;
+  text-transform: uppercase;
+}
+
+.line-bot {
+  padding-bottom: 300px;
+}
+
+.line-bot-content__text {
+  font-family: "Ogg";
+  font-style: italic;
+  font-weight: 260;
+  font-size: 170px;
+  line-height: 1;
+  text-transform: lowercase;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.instruments {
+  padding-bottom: 300px;
+}
+
+.instruments-content__title {
+  margin-bottom: 50px;
+}
+
+.instruments-content-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.instruments-content-list__item {
+  display: flex;
+  align-items: center;
+  max-width: 630px;
+  border: 1px solid #534f4d;
+  border-radius: 5000px;
+  padding: 70px 0;
+  padding-left: 110px;
+  padding-right: 110px;
+}
+.instruments-content-list__logo {
+  width: 50px;
+}
+.instruments-content-list__text {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  margin-left: 30px;
+  max-width: 190px;
+}
+
+.experience {
+  padding-bottom: 350px;
+}
+
+.experience-content__title {
+  margin-bottom: 150px;
+}
+
+.experience-content-list {
+  display: flex;
+  align-items: center;
+}
+.experience-content-list__item {
+  display: flex;
+  flex-direction: column;
+}
+.experience-content-list__item:not(:last-child) {
+  margin-right: 150px;
+}
+.experience-content-list__company {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.experience-content-list__text {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 108px;
+  color: #ffffff;
+}
+.experience-content-list__data {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.also {
+  padding-bottom: 300px;
+}
+
+.also-body {
+  display: flex;
+  gap: 100px;
+}
+
+.also-body-left {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.also-body-left__content {
+  max-width: 330px;
+  margin-top: auto;
+}
+.also-body-left__title {
+  margin-bottom: 30px;
+}
+.also-body-left__text {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.also-body-left__img--1 {
+  width: 420px;
+  margin-left: 105px;
+}
+.also-body-left__img--2 {
+  width: 625px;
+  margin-top: 100px;
+}
+
+.also-body-right__img {
+  width: 300px;
+}
+.also-body-right__img--3 {
+  margin-bottom: 110px;
+}
+.also-body-right__text {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 320px;
+  max-width: 300px;
+}
+
+.footer {
+  padding-bottom: 50px;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content-left__link {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: block;
+  color: #ffffff;
+}
+
+.footer-content-list {
+  display: flex;
+  gap: 30px;
+}
+.footer-content-list__link {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-content-right {
+  display: flex;
+  flex-direction: column;
+}
+.footer-content-right__link {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: right;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-content-right__link--color {
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-content-right__link:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.main {
+  padding-top: 310px;
+  padding-bottom: 505px;
+}
+
+.main-content__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 1.06;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.main-content__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.fonts {
+  padding-bottom: 400px;
+}
+
+.fonts-list__item {
+  position: relative;
+}
+.fonts-list__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 520px;
+  opacity: 0;
+}
+.fonts-list__number {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+}
+.fonts-list__text {
+  font-family: "Ogg";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 1.31;
+  text-transform: capitalize;
+}

@@ -1,0 +1,59 @@
+.experience {
+  padding-bottom: 350px;
+}
+
+.experience-content {
+  &__title {
+    margin-bottom: 150px;
+  }
+}
+
+.experience-content-list {
+  display: flex;
+  align-items: center;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    &:not(:last-child) {
+      margin-right: 150px;
+    }
+  }
+
+  &__company {
+    font-family: "PP Mori";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+
+    color: $white-05;
+  }
+
+  &__text {
+    font-family: "PP Mori";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.25;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 108px;
+
+    color: $white;
+  }
+
+  &__data {
+    font-family: "PP Mori";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+
+    color: $white-05;
+  }
+}

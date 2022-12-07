@@ -1,0 +1,40 @@
+.instruments {
+  padding-bottom: 300px;
+}
+
+.instruments-content {
+  &__title {
+    margin-bottom: 50px;
+  }
+}
+
+.instruments-content-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    max-width: 630px;
+    border: 1px solid #534f4d;
+    border-radius: 5000px;
+    padding: 70px 0;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  &__logo {
+    width: 50px;
+  }
+
+  &__text {
+    font-family: "PP Mori";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    margin-left: 30px;
+    max-width: 190px;
+  }
+}
