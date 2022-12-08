@@ -759,6 +759,12 @@ body {
   padding-top: 310px;
   padding-bottom: 505px;
 }
+@media screen and (max-width: 499px) {
+  .main {
+    padding-top: 200px;
+    padding-bottom: 300px;
+  }
+}
 
 .main-content__title {
   font-style: normal;
@@ -768,6 +774,11 @@ body {
   text-transform: uppercase;
   margin-bottom: 25px;
 }
+@media screen and (max-width: 499px) {
+  .main-content__title {
+    font-size: 60px;
+  }
+}
 .main-content__text {
   font-style: normal;
   font-weight: 400;
@@ -776,45 +787,84 @@ body {
   letter-spacing: -0.03em;
   text-transform: uppercase;
 }
+@media screen and (max-width: 499px) {
+  .main-content__text {
+    font-size: 18px;
+  }
+}
 
 .fonts {
   padding-bottom: 400px;
 }
+@media screen and (max-width: 499px) {
+  .fonts {
+    padding-bottom: 125px;
+  }
+}
 
 .fonts-list__item {
-  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 100px;
+}
+.fonts-list__item--line {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 100px;
 }
 .fonts-list__item:not(:last-child) {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
-.fonts-list__item::after {
-  content: "";
-  position: absolute;
-  bottom: -100px;
-  left: 0;
-  width: 100%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+.fonts-list__item:hover .fonts-list__top, .fonts-list__item:focus .fonts-list__top {
+  display: block;
 }
-.fonts-list__item--line::before {
-  content: "";
-  position: absolute;
-  top: -100px;
-  left: 0;
-  width: 100%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+.fonts-list__item:hover .fonts-list__item, .fonts-list__item:focus .fonts-list__item {
+  padding-top: 10px;
 }
 .fonts-list__img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
   width: 520px;
-  opacity: 0;
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 499px) {
+  .fonts-list__img {
+    width: 345px;
+    margin-bottom: 40px;
+  }
+}
+.fonts-list__top {
+  position: relative;
+  display: none;
+  transition: 250ms linear;
+}
+.fonts-list__content {
+  position: absolute;
+  bottom: -35px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+}
+@media screen and (max-width: 499px) {
+  .fonts-list__content {
+    bottom: -65px;
+  }
+}
+.fonts-list__see {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+.fonts-list__arrow {
+  width: 14px;
 }
 .fonts-list__number {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.03em;
+  display: block;
   margin-bottom: 20px;
 }
 .fonts-list__text--1 {
@@ -841,14 +891,6 @@ body {
   line-height: 1.31;
   text-transform: capitalize;
 }
-.fonts-list__text--4 {
-  font-family: "PP Mori";
-  font-style: normal;
-  font-weight: 100;
-  font-size: 80px;
-  line-height: 1.31;
-  text-transform: uppercase;
-}
 .fonts-list__text--5 {
   font-family: "Ogg";
   font-style: italic;
@@ -872,6 +914,26 @@ body {
   font-size: 80px;
   line-height: 1.31;
   text-transform: capitalize;
+}
+@media screen and (max-width: 499px) {
+  .fonts-list__text {
+    text-align: center;
+    font-size: 60px;
+  }
+}
+.fonts-list__text--4 {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 80px;
+  line-height: 1.31;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 499px) {
+  .fonts-list__text--4 {
+    text-align: center;
+    font-size: 48px;
+  }
 }
 
 @media screen and (max-width: 499px) {

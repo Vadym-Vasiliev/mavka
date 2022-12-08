@@ -1,6 +1,11 @@
 .main {
   padding-top: 310px;
   padding-bottom: 505px;
+
+  @media screen and (max-width: 499px) {
+    padding-top: 200px;
+    padding-bottom: 300px;
+  }
 }
 
 .main-content {
@@ -11,6 +16,10 @@
     line-height: 1.06;
     text-transform: uppercase;
     margin-bottom: 25px;
+
+    @media screen and (max-width: 499px) {
+      font-size: 60px;
+    }
   }
 
   &__text {
@@ -20,5 +29,9 @@
     line-height: 1.5;
     letter-spacing: -0.03em;
     text-transform: uppercase;
+
+    @media screen and (max-width: 499px) {
+      font-size: 18px;
+    }
   }
 }
