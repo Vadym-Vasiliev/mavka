@@ -39,8 +39,14 @@
     line-height: 1.43;
     letter-spacing: -0.03em;
     text-transform: uppercase;
+    transition: 250ms linear;
 
     color: $white-05;
+
+    &:hover,
+    &:focus {
+      color: $white;
+    }
   }
 }
 
@@ -56,6 +62,7 @@
     line-height: 1.43;
     text-align: right;
     text-transform: uppercase;
+    transition: 240ms linear;
 
     color: $white;
 
@@ -65,6 +72,11 @@
 
     &:not(:last-child) {
       margin-bottom: 20px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $white;
     }
   }
 }

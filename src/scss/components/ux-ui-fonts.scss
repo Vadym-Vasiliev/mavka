@@ -8,6 +8,32 @@
 .fonts-list {
   &__item {
     position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 200px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -100px;
+      left: 0;
+      width: 100%;
+
+      border-bottom: 1px solid $white-03;
+    }
+
+    &--line {
+      &::before {
+        content: "";
+        position: absolute;
+        top: -100px;
+        left: 0;
+        width: 100%;
+
+        border-bottom: 1px solid $white-03;
+      }
+    }
   }
 
   &__img {
@@ -23,14 +49,70 @@
     font-size: 20px;
     line-height: 1.5;
     letter-spacing: -0.03em;
+    margin-bottom: 20px;
   }
 
   &__text {
-    font-family: "Ogg";
-    font-style: italic;
-    font-weight: 300;
-    font-size: 80px;
-    line-height: 1.31;
-    text-transform: capitalize;
+    &--1 {
+      font-family: "Ogg";
+      font-style: italic;
+      font-weight: 300;
+      font-size: 80px;
+      line-height: 1.31;
+      text-transform: capitalize;
+    }
+
+    &--2 {
+      font-family: "PP Mori";
+      font-style: normal;
+      font-weight: 100;
+      font-size: 80px;
+      line-height: 1.31;
+      text-transform: uppercase;
+    }
+
+    &--3 {
+      font-family: "Ogg";
+      font-style: italic;
+      font-weight: 300;
+      font-size: 80px;
+      line-height: 1.31;
+      text-transform: capitalize;
+    }
+
+    &--4 {
+      font-family: "PP Mori";
+      font-style: normal;
+      font-weight: 100;
+      font-size: 80px;
+      line-height: 1.31;
+      text-transform: uppercase;
+    }
+
+    &--5 {
+      font-family: "Ogg";
+      font-style: italic;
+      font-weight: 300;
+      font-size: 80px;
+      line-height: 1.31;
+      text-transform: capitalize;
+    }
+
+    &--6 {
+      font-family: "PP Mori";
+      font-style: normal;
+      font-weight: 100;
+      font-size: 80px;
+      line-height: 1.31;
+      text-transform: uppercase;
+    }
+    &--7 {
+      font-family: "Ogg";
+      font-style: italic;
+      font-weight: 300;
+      font-size: 80px;
+      line-height: 1.31;
+      text-transform: capitalize;
+    }
   }
 }

@@ -311,6 +311,15 @@ body {
   text-transform: uppercase;
 }
 
+.current {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+}
+
 .header {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -698,7 +707,11 @@ body {
   line-height: 1.43;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  transition: 250ms linear;
   color: rgba(255, 255, 255, 0.5);
+}
+.footer-content-list__link:hover, .footer-content-list__link:focus {
+  color: #ffffff;
 }
 
 .footer-content-right {
@@ -713,6 +726,7 @@ body {
   line-height: 1.43;
   text-align: right;
   text-transform: uppercase;
+  transition: 240ms linear;
   color: #ffffff;
 }
 .footer-content-right__link--color {
@@ -720,6 +734,9 @@ body {
 }
 .footer-content-right__link:not(:last-child) {
   margin-bottom: 20px;
+}
+.footer-content-right__link:hover, .footer-content-right__link:focus {
+  color: #ffffff;
 }
 
 .main {
@@ -751,6 +768,25 @@ body {
 .fonts-list__item {
   position: relative;
 }
+.fonts-list__item:not(:last-child) {
+  margin-bottom: 200px;
+}
+.fonts-list__item::after {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.fonts-list__item--line::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
 .fonts-list__img {
   position: absolute;
   bottom: 0;
@@ -763,12 +799,127 @@ body {
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.03em;
+  margin-bottom: 20px;
 }
-.fonts-list__text {
+.fonts-list__text--1 {
   font-family: "Ogg";
   font-style: italic;
   font-weight: 300;
   font-size: 80px;
   line-height: 1.31;
   text-transform: capitalize;
+}
+.fonts-list__text--2 {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 80px;
+  line-height: 1.31;
+  text-transform: uppercase;
+}
+.fonts-list__text--3 {
+  font-family: "Ogg";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 1.31;
+  text-transform: capitalize;
+}
+.fonts-list__text--4 {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 80px;
+  line-height: 1.31;
+  text-transform: uppercase;
+}
+.fonts-list__text--5 {
+  font-family: "Ogg";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 1.31;
+  text-transform: capitalize;
+}
+.fonts-list__text--6 {
+  font-family: "PP Mori";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 80px;
+  line-height: 1.31;
+  text-transform: uppercase;
+}
+.fonts-list__text--7 {
+  font-family: "Ogg";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 1.31;
+  text-transform: capitalize;
+}
+
+.logos {
+  padding-bottom: 225px;
+}
+
+.logos-list__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logos-list__img {
+  margin-bottom: 295px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logos-list__img--1 {
+  width: 393px;
+}
+.logos-list__img--2 {
+  width: 311px;
+}
+.logos-list__img--3 {
+  width: 311px;
+}
+.logos-list__img--4 {
+  width: 220px;
+}
+.logos-list__img--5 {
+  width: 140px;
+}
+.logos-list__img--6 {
+  width: 339px;
+}
+.logos-list__img--7 {
+  width: 290px;
+}
+.logos-list__img--8 {
+  width: 290px;
+}
+.logos-list__img--9 {
+  width: 240px;
+}
+.logos-list__img--10 {
+  width: 220px;
+}
+.logos-list__img--11 {
+  width: 300px;
+}
+.logos-list__img--12 {
+  width: 190px;
+}
+.logos-list__img--13 {
+  width: 190px;
+}
+.logos-list__img--14 {
+  width: 160px;
+}
+.logos-list__img--15 {
+  width: 263px;
+}
+.logos-list__item {
+  padding-bottom: 25px;
+  padding-top: 350px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
