@@ -1,5 +1,22 @@
-// .main {
-//   &--pb {
-//     padding-bottom: 1245px;
-//   }
-// }
+.main {
+  &--logo-pb {
+    @media screen and (max-width: 499px) {
+      padding-top: 200px;
+      padding-bottom: 300px;
+    }
+  }
+}
+
+.main-content {
+  &__title {
+    &--logo-fs {
+      font-size: 60px;
+    }
+  }
+
+  &__text {
+    &--logo-fs {
+      font-size: 18px;
+    }
+  }
+}

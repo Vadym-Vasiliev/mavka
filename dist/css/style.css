@@ -681,7 +681,18 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 500px) {
+  .footer-content {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}
 
+@media screen and (max-width: 500px) {
+  .footer-content-left {
+    text-align: center;
+  }
+}
 .footer-content-left__link {
   font-family: "PP Mori";
   font-style: normal;
@@ -717,6 +728,11 @@ body {
 .footer-content-right {
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 500px) {
+  .footer-content-right {
+    align-items: center;
+  }
 }
 .footer-content-right__link {
   font-family: "PP Mori";
@@ -858,8 +874,27 @@ body {
   text-transform: capitalize;
 }
 
+@media screen and (max-width: 499px) {
+  .main--logo-pb {
+    padding-top: 200px;
+    padding-bottom: 300px;
+  }
+}
+
+.main-content__title--logo-fs {
+  font-size: 60px;
+}
+.main-content__text--logo-fs {
+  font-size: 18px;
+}
+
 .logos {
   padding-bottom: 225px;
+}
+@media screen and (max-width: 500px) {
+  .logos {
+    padding-bottom: 125px;
+  }
 }
 
 .logos-list__content {
@@ -872,8 +907,18 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 500px) {
+  .logos-list__img {
+    margin-bottom: 200px;
+  }
+}
 .logos-list__img--1 {
   width: 393px;
+}
+@media screen and (max-width: 500px) {
+  .logos-list__img--1 {
+    width: 345px;
+  }
 }
 .logos-list__img--2 {
   width: 311px;
@@ -922,4 +967,9 @@ body {
   padding-top: 350px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+@media screen and (max-width: 500px) {
+  .logos-list__item {
+    padding-top: 200px;
+  }
 }
