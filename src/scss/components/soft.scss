@@ -4,9 +4,18 @@
 
 .soft-content {
   display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 499px) {
+    text-align: center;
+    flex-direction: column;
+    row-gap: 50px;
+  }
 
   &__title {
-    margin-right: 450px;
+    @media screen and (max-width: 499px) {
+      font-size: 60px;
+    }
   }
 }
 .soft-content-list {
@@ -17,9 +26,6 @@
   }
 
   &__text {
-    font-family: "PP Mori";
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.56;
     text-transform: uppercase;

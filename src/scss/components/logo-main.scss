@@ -10,13 +10,17 @@
 .main-content {
   &__title {
     &--logo-fs {
-      font-size: 60px;
+      @media screen and (max-width: 499px) {
+        font-size: 60px;
+      }
     }
   }
 
   &__text {
     &--logo-fs {
-      font-size: 18px;
+      @media screen and (max-width: 499px) {
+        font-size: 18px;
+      }
     }
   }
 }

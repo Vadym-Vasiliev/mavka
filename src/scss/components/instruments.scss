@@ -1,16 +1,30 @@
 .instruments {
   padding-bottom: 300px;
+
+  @media screen and (max-width: 499px) {
+    padding-bottom: 150px;
+  }
 }
 
 .instruments-content {
   &__title {
     margin-bottom: 50px;
+
+    @media screen and (max-width: 499px) {
+      text-align: center;
+      font-size: 48px;
+    }
   }
 }
 
 .instruments-content-list {
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 499px) {
+    justify-content: center;
+    row-gap: 25px;
+  }
 
   &__item {
     display: flex;
@@ -21,6 +35,15 @@
     padding: 70px 0;
     padding-left: 110px;
     padding-right: 110px;
+    width: 630px;
+
+    @media screen and (max-width: 499px) {
+      padding: 40px 50px;
+    }
+
+    &--w {
+      width: 520px;
+    }
   }
 
   &__logo {
@@ -28,8 +51,6 @@
   }
 
   &__text {
-    font-family: "PP Mori";
-    font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.25;

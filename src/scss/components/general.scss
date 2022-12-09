@@ -2,7 +2,7 @@ html {
   font-size: 16px;
 }
 body {
-  font-family: "PP Mori";
+  font-family: $font-mori;
   text-transform: uppercase;
 
   color: $white;
@@ -24,8 +24,6 @@ body {
 }
 
 .title {
-  font-family: "PP Mori";
-  font-style: normal;
   font-weight: 400;
   font-size: 80px;
   line-height: 1.12;

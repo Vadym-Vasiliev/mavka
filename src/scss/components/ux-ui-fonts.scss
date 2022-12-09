@@ -6,9 +6,6 @@
   }
 }
 
-.fonts-content {
-}
-
 .fonts-list {
   &__item {
     border-bottom: 1px solid $white-03;
@@ -67,8 +64,6 @@
   }
 
   &__see {
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
     text-transform: uppercase;
@@ -79,7 +74,6 @@
   }
 
   &__number {
-    font-weight: 400;
     font-size: 20px;
     line-height: 1.5;
     letter-spacing: -0.03em;
@@ -89,7 +83,7 @@
 
   &__text {
     &--1 {
-      font-family: "Ogg";
+      font-family: $font-ogg;
       font-style: italic;
       font-weight: 300;
       font-size: 80px;
@@ -98,8 +92,6 @@
     }
 
     &--2 {
-      font-family: "PP Mori";
-      font-style: normal;
       font-weight: 100;
       font-size: 80px;
       line-height: 1.31;
@@ -107,7 +99,7 @@
     }
 
     &--3 {
-      font-family: "Ogg";
+      font-family: $font-ogg;
       font-style: italic;
       font-weight: 300;
       font-size: 80px;
@@ -116,7 +108,7 @@
     }
 
     &--5 {
-      font-family: "Ogg";
+      font-family: $font-ogg;
       font-style: italic;
       font-weight: 300;
       font-size: 80px;
@@ -125,15 +117,13 @@
     }
 
     &--6 {
-      font-family: "PP Mori";
-      font-style: normal;
       font-weight: 100;
       font-size: 80px;
       line-height: 1.31;
       text-transform: uppercase;
     }
     &--7 {
-      font-family: "Ogg";
+      font-family: $font-ogg;
       font-style: italic;
       font-weight: 300;
       font-size: 80px;
@@ -147,8 +137,6 @@
     }
 
     &--4 {
-      font-family: "PP Mori";
-      font-style: normal;
       font-weight: 100;
       font-size: 80px;
       line-height: 1.31;

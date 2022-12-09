@@ -303,8 +303,6 @@ body {
 }
 
 .title {
-  font-family: "PP Mori";
-  font-style: normal;
   font-weight: 400;
   font-size: 80px;
   line-height: 1.12;
@@ -336,9 +334,6 @@ body {
   gap: 30px;
 }
 .header-content__link {
-  font-family: "PP Mori";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: -0.03em;
@@ -353,22 +348,27 @@ body {
 }
 
 .main-content__name {
-  font-family: "PP Mori";
-  font-style: normal;
   font-weight: 400;
   font-size: 80px;
   line-height: 1.06;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
+@media screen and (max-width: 499px) {
+  .main-content__name {
+    font-size: 60px;
+  }
+}
 .main-content__text {
-  font-family: "PP Mori";
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+}
+@media screen and (max-width: 499px) {
+  .main-content__text {
+    font-size: 18px;
+  }
 }
 
 .line-content__text {
@@ -384,10 +384,27 @@ body {
   padding-top: 300px;
   padding-bottom: 300px;
 }
+@media screen and (max-width: 569px) {
+  .about {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
 
 .about-content {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 1319px) {
+  .about-content {
+    flex-wrap: wrap;
+    row-gap: 115px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .about-content {
+    row-gap: 90px;
+  }
 }
 
 .about-content-left__content {
@@ -395,35 +412,42 @@ body {
   margin-right: 115px;
 }
 .about-content-left__title {
-  font-family: "PP Mori";
-  font-style: normal;
   font-weight: 400;
   font-size: 80px;
   line-height: 1.12;
   text-transform: uppercase;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 499px) {
+  .about-content-left__title {
+    font-size: 60px;
+  }
+}
 .about-content-left__text {
-  font-family: "PP Mori";
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.03em;
   text-transform: uppercase;
 }
+@media screen and (max-width: 499px) {
+  .about-content-left__text {
+    font-size: 18px;
+  }
+}
 
 .about-content-center__img {
   width: 410px;
+}
+@media screen and (max-width: 499px) {
+  .about-content-center__img {
+    width: 345px;
+  }
 }
 
 .about-content-right {
   display: flex;
 }
 .about-content-right__text {
-  font-family: "PP Mori";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.56;
   letter-spacing: -0.03em;
@@ -436,10 +460,19 @@ body {
 .services {
   padding-bottom: 495px;
 }
+@media screen and (max-width: 569px) {
+  .services {
+    padding-bottom: 300px;
+  }
+}
+
+@media screen and (max-width: 569px) {
+  .services-content {
+    text-align: center;
+  }
+}
 
 .services-content-top__title {
-  font-family: "PP Mori";
-  font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 1.25;
@@ -447,13 +480,34 @@ body {
   max-width: 585px;
   margin-bottom: 390px;
 }
+@media screen and (max-width: 569px) {
+  .services-content-top__title {
+    margin-bottom: 100px;
+  }
+}
 
 .services-content-list {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 569px) {
+  .services-content-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 100px;
+  }
+}
 .services-content-list__item {
+  position: relative;
   max-width: 525px;
+}
+.services-content-list__item--mt {
+  margin-top: -276px;
+}
+@media screen and (max-width: 569px) {
+  .services-content-list__item--mt {
+    margin-top: 0;
+  }
 }
 .services-content-list__second-list {
   margin-bottom: 50px;
@@ -462,30 +516,33 @@ body {
   margin-bottom: 10px;
 }
 .services-content-list__text {
-  font-family: "PP Mori";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.56;
   text-transform: uppercase;
 }
 .services-content-list__title {
-  font-family: "PP Mori";
-  font-style: normal;
   font-weight: 600;
   font-size: 60px;
   line-height: 1;
   text-transform: uppercase;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 499px) {
+  .services-content-list__title {
+    font-size: 50px;
+  }
+}
 .services-content-list__contact {
-  font-family: "PP Mori";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  column-gap: 10px;
   color: #ffffff;
+}
+.services-content-list__arrow {
+  width: 14px;
 }
 
 .soft {
@@ -494,18 +551,25 @@ body {
 
 .soft-content {
   display: flex;
+  justify-content: space-between;
 }
-.soft-content__title {
-  margin-right: 450px;
+@media screen and (max-width: 499px) {
+  .soft-content {
+    text-align: center;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .soft-content__title {
+    font-size: 60px;
+  }
 }
 
 .soft-content-list__item:not(:last-child) {
   margin-bottom: 10px;
 }
 .soft-content-list__text {
-  font-family: "PP Mori";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.56;
   text-transform: uppercase;
@@ -528,14 +592,31 @@ body {
 .instruments {
   padding-bottom: 300px;
 }
+@media screen and (max-width: 499px) {
+  .instruments {
+    padding-bottom: 150px;
+  }
+}
 
 .instruments-content__title {
   margin-bottom: 50px;
+}
+@media screen and (max-width: 499px) {
+  .instruments-content__title {
+    text-align: center;
+    font-size: 48px;
+  }
 }
 
 .instruments-content-list {
   display: flex;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 499px) {
+  .instruments-content-list {
+    justify-content: center;
+    row-gap: 25px;
+  }
 }
 .instruments-content-list__item {
   display: flex;
@@ -546,13 +627,20 @@ body {
   padding: 70px 0;
   padding-left: 110px;
   padding-right: 110px;
+  width: 630px;
+}
+@media screen and (max-width: 499px) {
+  .instruments-content-list__item {
+    padding: 40px 50px;
+  }
+}
+.instruments-content-list__item--w {
+  width: 520px;
 }
 .instruments-content-list__logo {
   width: 50px;
 }
 .instruments-content-list__text {
-  font-family: "PP Mori";
-  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.25;
@@ -581,9 +669,6 @@ body {
   margin-right: 150px;
 }
 .experience-content-list__company {
-  font-family: "PP Mori";
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.03em;
@@ -592,20 +677,13 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 .experience-content-list__text {
-  font-family: "PP Mori";
-  font-style: normal;
-  font-weight: 400;
   font-size: 40px;
   line-height: 1.25;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   margin-bottom: 108px;
-  color: #ffffff;
 }
 .experience-content-list__data {
-  font-family: "PP Mori";
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.03em;
@@ -635,14 +713,10 @@ body {
   margin-bottom: 30px;
 }
 .also-body-left__text {
-  font-family: "PP Mori";
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: #ffffff;
 }
 .also-body-left__img--1 {
   width: 420px;
@@ -660,9 +734,6 @@ body {
   margin-bottom: 110px;
 }
 .also-body-right__text {
-  font-family: "PP Mori";
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.03em;
@@ -694,9 +765,6 @@ body {
   }
 }
 .footer-content-left__link {
-  font-family: "PP Mori";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: -0.03em;
@@ -711,9 +779,6 @@ body {
   gap: 30px;
 }
 .footer-content-list__link {
-  font-family: "PP Mori";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: -0.03em;
@@ -735,9 +800,6 @@ body {
   }
 }
 .footer-content-right__link {
-  font-family: "PP Mori";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.43;
   text-align: right;
@@ -767,7 +829,6 @@ body {
 }
 
 .main-content__title {
-  font-style: normal;
   font-weight: 400;
   font-size: 80px;
   line-height: 1.06;
@@ -780,8 +841,6 @@ body {
   }
 }
 .main-content__text {
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.03em;
@@ -850,8 +909,6 @@ body {
   }
 }
 .fonts-list__see {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
@@ -860,7 +917,6 @@ body {
   width: 14px;
 }
 .fonts-list__number {
-  font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.03em;
@@ -876,8 +932,6 @@ body {
   text-transform: capitalize;
 }
 .fonts-list__text--2 {
-  font-family: "PP Mori";
-  font-style: normal;
   font-weight: 100;
   font-size: 80px;
   line-height: 1.31;
@@ -900,8 +954,6 @@ body {
   text-transform: capitalize;
 }
 .fonts-list__text--6 {
-  font-family: "PP Mori";
-  font-style: normal;
   font-weight: 100;
   font-size: 80px;
   line-height: 1.31;
@@ -922,8 +974,6 @@ body {
   }
 }
 .fonts-list__text--4 {
-  font-family: "PP Mori";
-  font-style: normal;
   font-weight: 100;
   font-size: 80px;
   line-height: 1.31;
@@ -943,11 +993,15 @@ body {
   }
 }
 
-.main-content__title--logo-fs {
-  font-size: 60px;
+@media screen and (max-width: 499px) {
+  .main-content__title--logo-fs {
+    font-size: 60px;
+  }
 }
-.main-content__text--logo-fs {
-  font-size: 18px;
+@media screen and (max-width: 499px) {
+  .main-content__text--logo-fs {
+    font-size: 18px;
+  }
 }
 
 .logos {

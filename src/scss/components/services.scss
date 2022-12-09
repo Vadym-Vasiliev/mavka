@@ -1,25 +1,50 @@
 .services {
   padding-bottom: 495px;
+  @media screen and (max-width: 569px) {
+    padding-bottom: 300px;
+  }
+}
+.services-content {
+  @media screen and (max-width: 569px) {
+    text-align: center;
+  }
 }
 
 .services-content-top {
   &__title {
-    font-family: "PP Mori";
-    font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 1.25;
     text-transform: uppercase;
     max-width: 585px;
     margin-bottom: 390px;
+
+    @media screen and (max-width: 569px) {
+      margin-bottom: 100px;
+    }
   }
 }
 .services-content-list {
   display: flex;
   justify-content: space-between;
 
+  @media screen and (max-width: 569px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 100px;
+  }
+
   &__item {
+    position: relative;
     max-width: 525px;
+
+    &--mt {
+      margin-top: -276px;
+
+      @media screen and (max-width: 569px) {
+        margin-top: 0;
+      }
+    }
   }
 
   &__second-list {
@@ -32,32 +57,35 @@
   }
 
   &__text {
-    font-family: "PP Mori";
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.56;
     text-transform: uppercase;
   }
 
   &__title {
-    font-family: "PP Mori";
-    font-style: normal;
     font-weight: 600;
     font-size: 60px;
     line-height: 1;
     text-transform: uppercase;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 499px) {
+      font-size: 50px;
+    }
   }
 
   &__contact {
-    font-family: "PP Mori";
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
     text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
 
     color: #ffffff;
+  }
+
+  &__arrow {
+    width: 14px;
   }
 }
