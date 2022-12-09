@@ -15,11 +15,51 @@
   }
 
   &__link {
+    position: relative;
     font-size: 14px;
     line-height: 1.43;
     letter-spacing: -0.03em;
     text-transform: uppercase;
+    transition: 250ms linear;
 
     color: $white;
+
+    &--line {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        transform: scaleX(0);
+        transition: transform 250ms linear, background-color 250ms linear;
+        transform-origin: bottom right;
+
+        background-color: $white;
+      }
+
+      &:hover::after,
+      &:focus::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+    }
+
+    &--current::before {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+
+      background-color: $white;
+    }
+
+    &:hover,
+    &:focus {
+      color: $white-05;
+    }
   }
 }
