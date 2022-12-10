@@ -11,6 +11,24 @@
 }
 
 @mixin mobile {
+  @media screen and (max-width: 659px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (min-width: 660px) and (max-width: 1049px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 1049px) {
+    @content;
+  }
+}
+
+@mixin mobile {
   @media screen and (max-width: 1319px) {
     @content;
   }

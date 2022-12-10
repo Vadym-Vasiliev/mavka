@@ -26,6 +26,11 @@
   &__content {
     max-width: 325px;
     margin-right: 115px;
+
+    @media screen and (max-width: 499px) {
+      margin-right: 0;
+      text-align: center;
+    }
   }
 
   &__title {
@@ -71,5 +76,10 @@
     margin-left: 140px;
 
     color: $gray;
+
+    @media screen and (max-width: 499px) {
+      text-align: center;
+      margin-left: 0;
+    }
   }
 }

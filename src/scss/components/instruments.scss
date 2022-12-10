@@ -10,8 +10,11 @@
   &__title {
     margin-bottom: 50px;
 
-    @media screen and (max-width: 499px) {
+    @media screen and (max-width: 569px) {
       text-align: center;
+    }
+
+    @media screen and (max-width: 659px) {
       font-size: 48px;
     }
   }
@@ -20,10 +23,14 @@
 .instruments-content-list {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 140px;
 
   @media screen and (max-width: 499px) {
     justify-content: center;
-    row-gap: 25px;
+  }
+
+  @media screen and (max-width: 569px) {
+    justify-content: center;
   }
 
   &__item {
@@ -41,8 +48,32 @@
       padding: 40px 50px;
     }
 
+    @media screen and (max-width: 499px) {
+      width: 350px;
+    }
+
+    @media screen and (max-width: 659px) {
+      width: 550px;
+    }
+
+    @media screen and (max-width: 569px) {
+      width: 380px;
+    }
+
     &--w {
       width: 520px;
+
+      @media screen and (max-width: 1319px) {
+        width: 630px;
+      }
+
+      @media screen and (max-width: 659px) {
+        width: 550px;
+      }
+
+      @media screen and (max-width: 569px) {
+        width: 380px;
+      }
     }
   }
 
@@ -57,5 +88,15 @@
     text-transform: uppercase;
     margin-left: 30px;
     max-width: 190px;
+  }
+
+  &__list-main {
+    &--mb {
+      margin-top: 190px;
+
+      @media screen and (max-width: 1319px) {
+        margin-top: 0;
+      }
+    }
   }
 }
