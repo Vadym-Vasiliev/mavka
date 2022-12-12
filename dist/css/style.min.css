@@ -316,70 +316,70 @@ body {
 @font-face {
   font-family: OggBoldItalic;
   font-display: swap;
-  src: url("fonts/OggBoldItalic.woff2") format("woff2"), url("fonts/OggBoldItalic.woff") format("woff");
+  src: url("../fonts/OggBoldItalic.woff2") format("woff2"), url("../fonts/OggBoldItalic.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: OggLightItalic;
   font-display: swap;
-  src: url("fonts/OggLightItalic.woff2") format("woff2"), url("fonts/OggLightItalic.woff") format("woff");
+  src: url("../fonts/OggLightItalic.woff2") format("woff2"), url("../fonts/OggLightItalic.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: OggMediumItalic;
   font-display: swap;
-  src: url("fonts/OggMediumItalic.woff2") format("woff2"), url("fonts/OggMediumItalic.woff") format("woff");
+  src: url("../fonts/OggMediumItalic.woff2") format("woff2"), url("../fonts/OggMediumItalic.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: OggRegular;
   font-display: swap;
-  src: url("fonts/OggRegular.woff2") format("woff2"), url("fonts/OggRegular.woff") format("woff");
+  src: url("../fonts/OggRegular.woff2") format("woff2"), url("../fonts/OggRegular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: OggRegularItalic;
   font-display: swap;
-  src: url("fonts/OggRegularItalic.woff2") format("woff2"), url("fonts/OggRegularItalic.woff") format("woff");
+  src: url("../fonts/OggRegularItalic.woff2") format("woff2"), url("../fonts/OggRegularItalic.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: OggBold;
   font-display: swap;
-  src: url("fonts/OggBold.woff2") format("woff2"), url("fonts/OggBold.woff") format("woff");
+  src: url("../fonts/OggBold.woff2") format("woff2"), url("../fonts/OggBold.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: OggThin;
   font-display: swap;
-  src: url("fonts/OggThin.woff2") format("woff2"), url("fonts/OggThin.woff") format("woff");
+  src: url("../fonts/OggThin.woff2") format("woff2"), url("../fonts/OggThin.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: OggLight;
   font-display: swap;
-  src: url("fonts/OggLight.woff2") format("woff2"), url("fonts/OggLight.woff") format("woff");
+  src: url("../fonts/OggLight.woff2") format("woff2"), url("../fonts/OggLight.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: OggThinItalic;
   font-display: swap;
-  src: url("fonts/OggThinItalic.woff2") format("woff2"), url("fonts/OggThinItalic.woff") format("woff");
+  src: url("../fonts/OggThinItalic.woff2") format("woff2"), url("../fonts/OggThinItalic.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: OggMedium;
   font-display: swap;
-  src: url("fonts/OggMedium.woff2") format("woff2"), url("fonts/OggMedium.woff") format("woff");
+  src: url("../fonts/OggMedium.woff2") format("woff2"), url("../fonts/OggMedium.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
