@@ -1,80 +1,83 @@
 @font-face {
-  font-family: OggBoldItalic;
-  font-display: swap;
+  font-family: "Ogg";
   src: url("fonts/OggBoldItalic.woff2") format("woff2"),
-    url("fonts/OggBoldItalic.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
+    url("fonts/OggBoldItalic.woff") format("woff"),
+    url("fonts/OggBoldItalic.woff") format("truetype");
+  font-weight: 700;
+  font-style: italic;
 }
+
 @font-face {
-  font-family: OggLightItalic;
-  font-display: swap;
-  src: url("fonts/OggLightItalic.woff2") format("woff2"),
-    url("fonts/OggLightItalic.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: OggMediumItalic;
-  font-display: swap;
-  src: url("fonts/OggMediumItalic.woff2") format("woff2"),
-    url("fonts/OggMediumItalic.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: OggRegular;
-  font-display: swap;
-  src: url("fonts/OggRegular.woff2") format("woff2"),
-    url("fonts/OggRegular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: OggRegularItalic;
-  font-display: swap;
-  src: url("fonts/OggRegularItalic.woff2") format("woff2"),
-    url("fonts/OggRegularItalic.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: OggBold;
-  font-display: swap;
+  font-family: "Ogg";
   src: url("fonts/OggBold.woff2") format("woff2"),
-    url("fonts/OggBold.woff") format("woff");
+    url("fonts/OggBold.woff") format("woff"),
+    url("fonts/OggBold.woff") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/OggLightItalic.woff2") format("woff2"),
+    url("fonts/OggLightItalic.woff") format("woff"),
+    url("fonts/OggLightItalic.woff") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/OggMediumItalic.woff2") format("woff2"),
+    url("fonts/OggMediumItalic.woff") format("woff"),
+    url("fonts/OggMediumItalic.woff") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("fonts/OggRegular.woff2") format("woff2"),
+    url("fonts/OggRegular.woff") format("woff"),
+    url("fonts/OggRegular.woff") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: OggThin;
-  font-display: swap;
+  font-family: "Ogg";
+  src: url("fonts/OggRegularItalic.woff2") format("woff2"),
+    url("fonts/OggRegularItalic.woff") format("woff"),
+    url("fonts/OggRegularItalic.woff") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Ogg";
   src: url("fonts/OggThin.woff2") format("woff2"),
-    url("fonts/OggThin.woff") format("woff");
-  font-weight: 400;
+    url("fonts/OggThin.woff") format("woff"),
+    url("fonts/OggThin.woff") format("truetype");
+  font-weight: 100;
   font-style: normal;
 }
 @font-face {
-  font-family: OggLight;
-  font-display: swap;
+  font-family: "Ogg";
   src: url("fonts/OggLight.woff2") format("woff2"),
-    url("fonts/OggLight.woff") format("woff");
-  font-weight: 400;
+    url("fonts/OggLight.woff") format("woff"),
+    url("fonts/OggLight.woff") format("truetype");
+  font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: OggThinItalic;
-  font-display: swap;
+  font-family: "Ogg";
   src: url("fonts/OggThinItalic.woff2") format("woff2"),
-    url("fonts/OggThinItalic.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
+    url("fonts/OggThinItalic.woff") format("woff"),
+    url("fonts/OggThinItalic.woff") format("truetype");
+  font-weight: 100;
+  font-style: italic;
 }
 @font-face {
-  font-family: OggMedium;
-  font-display: swap;
+  font-family: "Ogg";
   src: url("fonts/OggMedium.woff2") format("woff2"),
-    url("fonts/OggMedium.woff") format("woff");
-  font-weight: 400;
+    url("fonts/OggMedium.woff") format("woff"),
+    url("fonts/OggMedium.woff") format("truetype");
+  font-weight: 500;
   font-style: normal;
 }
