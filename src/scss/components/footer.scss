@@ -24,9 +24,15 @@
     letter-spacing: -0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;
-    display: block;
+    display: inline-block;
+    transition: 250ms linear;
 
     color: $white;
+
+    &:hover,
+    &:focus {
+      color: $white-05;
+    }
   }
 }
 
@@ -35,6 +41,7 @@
   gap: 30px;
 
   &__link {
+    position: relative;
     font-size: 14px;
     line-height: 1.43;
     letter-spacing: -0.03em;
@@ -42,6 +49,26 @@
     transition: 250ms linear;
 
     color: $white-05;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      transform: scaleX(0);
+      transition: transform 300ms linear, background-color 250ms linear;
+      transform-origin: bottom right;
+
+      background-color: $white-05;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
 
     &:hover,
     &:focus {
@@ -51,32 +78,39 @@
 }
 
 .footer-content-right {
-  display: flex;
-  flex-direction: column;
-  @media screen and (max-width: 500px) {
-    align-items: center;
-  }
-
   &__link {
     font-size: 14px;
     line-height: 1.43;
-    text-align: right;
     text-transform: uppercase;
     transition: 240ms linear;
+    display: block;
 
     color: $white;
 
+    &--ib {
+      text-align: right;
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 500px) {
+        text-align: center;
+      }
+      &:hover,
+      &:focus {
+        color: $white-05;
+      }
+    }
+
     &--color {
       color: $white-05;
+
+      &:hover,
+      &:focus {
+        color: $white;
+      }
     }
 
     &:not(:last-child) {
       margin-bottom: 20px;
-    }
-
-    &:hover,
-    &:focus {
-      color: $white;
     }
   }
 }

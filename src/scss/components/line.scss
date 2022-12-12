@@ -24,8 +24,39 @@
     line-height: 1.5;
     text-transform: lowercase;
 
+    @media screen and (max-width: 1319px) {
+      font-size: 106px;
+    }
+
+    @media screen and (max-width: 1049px) {
+      font-size: 64px;
+    }
+
+    @media screen and (max-width: 659px) {
+      font-size: 56px;
+    }
+
+    @media screen and (max-width: 569px) {
+      font-size: 48px;
+    }
+
+    @media screen and (max-width: 499px) {
+      font-size: 35px;
+    }
+
     &:not(:last-child) {
       margin-right: 120px;
+
+      @media screen and (max-width: 659px) {
+        margin-right: 100px;
+      }
+      @media screen and (max-width: 569px) {
+        margin-right: 40px;
+      }
+
+      @media screen and (max-width: 499px) {
+        margin-right: 20px;
+      }
     }
   }
 }

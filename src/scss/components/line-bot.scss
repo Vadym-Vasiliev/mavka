@@ -22,6 +22,27 @@
     font-size: 170px;
     line-height: 1.5;
     text-transform: lowercase;
+    color: $white-03;
+
+    @media screen and (max-width: 1319px) {
+      font-size: 134px;
+    }
+
+    @media screen and (max-width: 1049px) {
+      font-size: 84px;
+    }
+
+    @media screen and (max-width: 659px) {
+      font-size: 74px;
+    }
+
+    @media screen and (max-width: 569px) {
+      font-size: 64px;
+    }
+
+    @media screen and (max-width: 499px) {
+      font-size: 48px;
+    }
 
     &:not(:last-child) {
       margin-right: 120px;
