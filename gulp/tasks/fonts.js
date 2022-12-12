@@ -1,12 +1,10 @@
 import fs from "fs";
-import fonter from "gulp-fonter";
-import ttf2woff2 from "gulp-ttf2woff2";
 
-export const otfToTtf = () => {
-  //Шукаємо файли шрифтів .otf
+export const woffToTtf = () => {
+  //Шукаємо файли шрифтів .woff
   return (
     app.gulp
-      .src(`${app.path.srcFolder}/fonts/*.otf`, {})
+      .src(`${app.path.srcFolder}/fonts/*.woff2`, {})
       .pipe(
         app.plugins.plumber(
           app.plugins.notify.onError({
@@ -14,48 +12,10 @@ export const otfToTtf = () => {
             message: "Error: <%= error.message %>",
           })
         )
-      )
-
-      //Конвертуємо в .ttf
-      .pipe(
-        fonter({
-          formats: ["ttf"],
-        })
       )
 
       //Вигружаємо в ісходну папку
-      .pipe(app.gulp.dest(`${app.path.srcFolder}/fonts/`))
-  );
-};
-
-export const ttfToWoff = () => {
-  //Шукаємо файли шрифтів .ttf
-  return (
-    app.gulp
-      .src(`${app.path.srcFolder}/fonts/*.ttf`, {})
-      .pipe(
-        app.plugins.plumber(
-          app.plugins.notify.onError({
-            title: "IMAGES",
-            message: "Error: <%= error.message %>",
-          })
-        )
-      )
-      //Конвертуємо в .ttf
-      .pipe(
-        fonter({
-          formats: ["woff"],
-        })
-      )
-
-      //Вигружаємо в папку з результатом
-      .pipe(app.gulp.dest(`${app.path.build.fonts}`))
-      //шукаємо файли шрифтів .ttf
-      .pipe(app.gulp.src(`${app.path.srcFolder}/fonts/*.ttf`))
-      //Конвертуємо в .woff2
-      .pipe(ttf2woff2())
-      //Вигружаємо в папку з результатом
-      .pipe(app.gulp.dest(`${app.path.build.fonts}`))
+      .pipe(app.gulp.dest(app.path.build.fonts))
   );
 };
 
