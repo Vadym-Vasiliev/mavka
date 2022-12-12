@@ -288,6 +288,10 @@ body {
   background-color: #000000;
 }
 
+.ux-ui {
+  background-color: #0a0401;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -700,6 +704,7 @@ body {
 .soft-content {
   display: flex;
   justify-content: space-between;
+  max-width: 915px;
 }
 @media screen and (max-width: 499px) {
   .soft-content {

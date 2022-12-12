@@ -5,6 +5,7 @@
 .soft-content {
   display: flex;
   justify-content: space-between;
+  max-width: 915px;
 
   @media screen and (max-width: 499px) {
     text-align: center;
