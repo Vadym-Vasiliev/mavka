@@ -41,7 +41,7 @@
     bottom: 110px;
     left: -50%;
     width: 200%;
-    height: 1px;
+
     border: 1px solid $white-03;
 
     @media screen and (max-width: 1319px) {
@@ -89,5 +89,19 @@
     text-transform: uppercase;
 
     color: $white-05;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 113px;
+      height: 50px;
+      z-index: -1;
+
+      border-left: 1px solid $white-03;
+
+      @media screen and (max-width: 1319px) {
+        display: none;
+      }
+    }
   }
 }
