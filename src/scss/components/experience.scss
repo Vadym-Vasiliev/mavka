@@ -1,5 +1,6 @@
 .experience {
   padding-bottom: 350px;
+  overflow: hidden;
 
   @media screen and (max-width: 499px) {
     padding-bottom: 150px;
@@ -26,12 +27,27 @@
 }
 
 .experience-content-list {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   column-gap: 40px;
   row-gap: 100px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 110px;
+    left: -50%;
+    width: 200%;
+    height: 1px;
+    border: 1px solid $white-03;
+
+    @media screen and (max-width: 1319px) {
+      display: none;
+    }
+  }
 
   @media screen and (max-width: 499px) {
     justify-content: center;
@@ -43,6 +59,7 @@
   }
 
   &__company {
+    position: relative;
     font-size: 20px;
     line-height: 1.5;
     letter-spacing: -0.03em;

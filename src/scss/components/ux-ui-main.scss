@@ -1,6 +1,11 @@
 .main {
   padding-top: 310px;
-  padding-bottom: 505px;
+  padding-bottom: 450px;
+
+  &--about {
+    padding-top: 180px;
+    padding-bottom: 100px;
+  }
 
   @media screen and (max-width: 499px) {
     padding-top: 200px;

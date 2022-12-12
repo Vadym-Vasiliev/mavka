@@ -1,10 +1,31 @@
-.line-content {
-  &__text {
+.line {
+  overflow: hidden;
+
+  &__infinity {
+    display: flex;
+    align-items: center;
+    width: 260%;
+    animation: line__infinity 20s linear infinite;
+  }
+
+  @keyframes line__infinity {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  &__title {
     font-family: $font-ogg;
     font-style: italic;
     font-weight: 260;
     font-size: 170px;
-    line-height: 1;
+    line-height: 1.5;
     text-transform: lowercase;
+
+    &:not(:last-child) {
+      margin-right: 120px;
+    }
   }
 }

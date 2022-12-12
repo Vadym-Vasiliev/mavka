@@ -117,8 +117,21 @@
 }
 
 .also-body-right {
+  position: relative;
   display: flex;
   flex-direction: column;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    margin-left: -35px;
+    border-left: 1px solid $white-03;
+
+    @media screen and (max-width: 1319px) {
+      display: none;
+    }
+  }
 
   @media screen and (max-width: 1049px) {
     flex-direction: row;

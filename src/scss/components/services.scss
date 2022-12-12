@@ -1,5 +1,6 @@
 .services {
   padding-bottom: 495px;
+  overflow: hidden;
   @media screen and (max-width: 569px) {
     padding-bottom: 300px;
   }
@@ -42,8 +43,44 @@
     position: relative;
     max-width: 525px;
 
+    &--left {
+      &::before {
+        content: "";
+        position: absolute;
+        left: -250px;
+        top: -250px;
+        width: 905px;
+        height: 905px;
+        border-radius: 50%;
+        z-index: -2;
+
+        border: 1px solid $white-03;
+
+        @media screen and (max-width: 559px) {
+          display: none;
+        }
+      }
+    }
+
     &--mt {
       margin-top: -276px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -200px;
+        top: -200px;
+        width: 847px;
+        height: 847px;
+        border-radius: 50%;
+        z-index: -1;
+
+        border: 1px solid $white-03;
+
+        @media screen and (max-width: 559px) {
+          display: none;
+        }
+      }
 
       @media screen and (max-width: 569px) {
         margin-top: 0;
