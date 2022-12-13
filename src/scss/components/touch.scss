@@ -1,0 +1,57 @@
+.touch {
+  padding-bottom: 250px;
+}
+
+.touch-content {
+  &__title {
+    width: 499px;
+  }
+
+  &__bot {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    column-gap: 190px;
+  }
+}
+
+.touch-soclist {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    color: $white;
+  }
+  &__arrow {
+    width: 14px;
+  }
+}
+
+.touch-list {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.25;
+    text-transform: uppercase;
+
+    color: $white;
+  }
+}
