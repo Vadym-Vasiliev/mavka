@@ -415,6 +415,30 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.header-content__burger {
+  width: 45px;
+  height: 5px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-left: transparent;
+  border-right: transparent;
+  cursor: pointer;
+  display: none;
+  background-color: transparent;
+}
+@media screen and (max-width: 499px) {
+  .header-content__burger {
+    display: block;
+  }
+}
+.header-content__menu {
+  display: block;
+}
+@media screen and (max-width: 499px) {
+  .header-content__menu {
+    display: none;
+  }
+}
 .header-content__list {
   display: flex;
   align-items: center;
@@ -428,6 +452,19 @@ body {
   text-transform: uppercase;
   transition: 250ms linear;
   color: #ffffff;
+}
+@media screen and (max-width: 499px) {
+  .header-content__link--longkd {
+    display: none;
+  }
+}
+.header-content__link--kd {
+  display: none;
+}
+@media screen and (max-width: 499px) {
+  .header-content__link--kd {
+    display: block;
+  }
 }
 .header-content__link--line::after {
   content: "";
@@ -473,7 +510,7 @@ body {
 }
 @media screen and (max-width: 499px) {
   .main-content__name {
-    font-size: 60px;
+    font-size: 55px;
   }
 }
 .main-content__text {
@@ -488,6 +525,7 @@ body {
 @media screen and (max-width: 499px) {
   .main-content__text {
     font-size: 18px;
+    max-width: 164px;
   }
 }
 
@@ -1610,8 +1648,8 @@ body {
 
 @media screen and (max-width: 499px) {
   .main--logo-pb {
-    padding-top: 200px;
-    padding-bottom: 300px;
+    padding-top: 260px;
+    padding-bottom: 350px;
   }
 }
 @media screen and (max-width: 499px) {
@@ -1622,7 +1660,7 @@ body {
 
 @media screen and (max-width: 499px) {
   .main-content__title--logo-fs {
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 @media screen and (max-width: 499px) {
@@ -1634,9 +1672,9 @@ body {
 .logos {
   padding-bottom: 225px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 499px) {
   .logos {
-    padding-bottom: 125px;
+    padding-bottom: 130px;
   }
 }
 
@@ -1645,41 +1683,100 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.logos-list__item {
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.logos-list__item:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 0;
+}
+@media screen and (max-width: 499px) {
+  .logos-list__item:first-child {
+    border-top: none;
+  }
+}
+.logos-list__item--dnl {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+@media screen and (max-width: 499px) {
+  .logos-list__item--dn {
+    display: none;
+  }
+}
+@media screen and (max-width: 499px) {
+  .logos-list__item {
+    padding-top: 150px;
+  }
+}
 .logos-list__img {
+  margin-top: 350px;
   margin-bottom: 295px;
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 499px) {
   .logos-list__img {
-    margin-bottom: 200px;
+    margin-top: 0;
+    margin-bottom: 150px;
   }
 }
 .logos-list__img--1 {
   width: 393px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 499px) {
   .logos-list__img--1 {
-    width: 345px;
+    width: 175px;
   }
 }
 .logos-list__img--2 {
   width: 311px;
 }
+@media screen and (max-width: 499px) {
+  .logos-list__img--2 {
+    width: 175px;
+  }
+}
 .logos-list__img--3 {
   width: 311px;
+}
+@media screen and (max-width: 499px) {
+  .logos-list__img--3 {
+    width: 175px;
+  }
 }
 .logos-list__img--4 {
   width: 220px;
 }
+@media screen and (max-width: 499px) {
+  .logos-list__img--4 {
+    width: 105px;
+  }
+}
 .logos-list__img--5 {
   width: 140px;
+}
+@media screen and (max-width: 499px) {
+  .logos-list__img--5 {
+    width: 105px;
+  }
 }
 .logos-list__img--6 {
   width: 339px;
 }
+@media screen and (max-width: 499px) {
+  .logos-list__img--6 {
+    width: 205px;
+  }
+}
 .logos-list__img--7 {
   width: 290px;
+}
+@media screen and (max-width: 499px) {
+  .logos-list__img--7 {
+    display: none;
+  }
 }
 .logos-list__img--8 {
   width: 290px;
@@ -1704,15 +1801,4 @@ body {
 }
 .logos-list__img--15 {
   width: 263px;
-}
-.logos-list__item {
-  padding-bottom: 25px;
-  padding-top: 350px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-}
-@media screen and (max-width: 500px) {
-  .logos-list__item {
-    padding-top: 200px;
-  }
 }

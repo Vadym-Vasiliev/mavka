@@ -8,6 +8,30 @@
   justify-content: space-between;
   align-items: center;
 
+  &__burger {
+    width: 45px;
+    height: 5px;
+    border-top: 1px solid $white;
+    border-bottom: 1px solid $white;
+    border-left: transparent;
+    border-right: transparent;
+    cursor: pointer;
+    display: none;
+
+    background-color: transparent;
+
+    @media screen and (max-width: 499px) {
+      display: block;
+    }
+  }
+
+  &__menu {
+    display: block;
+    @media screen and (max-width: 499px) {
+      display: none;
+    }
+  }
+
   &__list {
     display: flex;
     align-items: center;
@@ -23,6 +47,19 @@
     transition: 250ms linear;
 
     color: $white;
+
+    &--longkd {
+      @media screen and (max-width: 499px) {
+        display: none;
+      }
+    }
+
+    &--kd {
+      display: none;
+      @media screen and (max-width: 499px) {
+        display: block;
+      }
+    }
 
     &--line {
       &::after {
