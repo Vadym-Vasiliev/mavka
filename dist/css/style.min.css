@@ -1346,13 +1346,24 @@ body {
 }
 
 .touch-content__title {
-  width: 499px;
+  max-width: 499px;
+}
+@media screen and (max-width: 499px) {
+  .touch-content__title {
+    font-size: 55px;
+    margin-bottom: 100px;
+  }
 }
 .touch-content__bot {
   display: flex;
   align-items: center;
   justify-content: end;
   column-gap: 190px;
+}
+@media screen and (max-width: 499px) {
+  .touch-content__bot {
+    flex-direction: column;
+  }
 }
 
 .touch-soclist__item:not(:last-child) {
@@ -1485,8 +1496,8 @@ body {
 }
 @media screen and (max-width: 499px) {
   .main {
-    padding-top: 200px;
-    padding-bottom: 300px;
+    padding-top: 260px;
+    padding-bottom: 350px;
   }
 }
 
@@ -1499,7 +1510,7 @@ body {
 }
 @media screen and (max-width: 499px) {
   .main-content__title {
-    font-size: 60px;
+    font-size: 55px;
   }
 }
 .main-content__text {
@@ -1515,14 +1526,17 @@ body {
 }
 
 .fonts {
-  padding-bottom: 400px;
+  padding-bottom: 250px;
 }
 @media screen and (max-width: 499px) {
   .fonts {
-    padding-bottom: 125px;
+    padding-bottom: 150px;
   }
 }
 
+.fonts-list__item {
+  position: relative;
+}
 .fonts-list__item:not(:last-child) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 100px;
@@ -1533,8 +1547,21 @@ body {
 .fonts-list__item:hover .fonts-list__top, .fonts-list__item:focus .fonts-list__top {
   display: block;
 }
+@media screen and (max-width: 499px) {
+  .fonts-list__item:hover .fonts-list__top, .fonts-list__item:focus .fonts-list__top {
+    display: none;
+  }
+}
 .fonts-list__item:hover .fonts-list__item, .fonts-list__item:focus .fonts-list__item {
   padding-top: 10px;
+}
+.fonts-list__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 .fonts-list__img {
   width: 520px;
@@ -1551,6 +1578,11 @@ body {
   position: relative;
   display: none;
   transition: 250ms linear;
+}
+@media screen and (max-width: 499px) {
+  .fonts-list__top {
+    display: none;
+  }
 }
 .fonts-list__content {
   position: absolute;
@@ -1628,12 +1660,6 @@ body {
   line-height: 1.31;
   text-transform: lowercase;
 }
-@media screen and (max-width: 499px) {
-  .fonts-list__text {
-    text-align: center;
-    font-size: 60px;
-  }
-}
 .fonts-list__text--4 {
   font-weight: 100;
   font-size: 80px;
@@ -1641,8 +1667,17 @@ body {
 }
 @media screen and (max-width: 499px) {
   .fonts-list__text--4 {
-    text-align: center;
     font-size: 48px;
+  }
+}
+@media screen and (max-width: 569px) {
+  .fonts-list__text--4 {
+    font-size: 58px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .fonts-list__text {
+    font-size: 35px;
   }
 }
 
