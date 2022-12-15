@@ -2,9 +2,9 @@
   padding-top: 300px;
   padding-bottom: 300px;
 
-  @media screen and (max-width: 499px) {
-    padding-top: 150px;
-    padding-bottom: 150px;
+  @media screen and (max-width: 569px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 
@@ -12,12 +12,28 @@
   &__title {
     margin-bottom: 50px;
 
-    @media screen and (max-width: 569px) {
-      text-align: center;
+    &--db {
+      display: none;
+
+      @media screen and (max-width: 499px) {
+        display: block;
+      }
+    }
+    &--dn {
+      @media screen and (max-width: 499px) {
+        display: none;
+      }
     }
 
     @media screen and (max-width: 659px) {
       font-size: 48px;
+    }
+
+    @media screen and (max-width: 569px) {
+      font-size: 55px;
+      margin-bottom: 70px;
+      width: 240px;
+      line-height: 1.09;
     }
   }
 }
@@ -26,13 +42,14 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 140px;
-
-  @media screen and (max-width: 499px) {
+  @media screen and (max-width: 569px) {
     justify-content: center;
   }
 
   @media screen and (max-width: 569px) {
     justify-content: center;
+    margin-left: 60px;
+    row-gap: 30px;
   }
 
   &__item {
@@ -46,20 +63,28 @@
     padding-right: 110px;
     width: 630px;
 
-    @media screen and (max-width: 499px) {
-      padding: 40px 50px;
-    }
-
-    @media screen and (max-width: 499px) {
-      width: 350px;
-    }
-
     @media screen and (max-width: 659px) {
       width: 550px;
     }
 
     @media screen and (max-width: 569px) {
       width: 380px;
+    }
+
+    @media screen and (max-width: 569px) {
+      padding: 0;
+      padding-bottom: 30px;
+      width: 350px;
+      border: none;
+      max-width: 285px;
+      border-radius: 0;
+      border-bottom: 1px solid $white-03;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
 
     &--w {
@@ -76,11 +101,30 @@
       @media screen and (max-width: 569px) {
         width: 380px;
       }
+
+      @media screen and (max-width: 569px) {
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+      }
     }
   }
 
   &__logo {
     width: 50px;
+
+    @media screen and (max-width: 569px) {
+      display: none;
+    }
+
+    &--mob {
+      display: none;
+      width: 26px;
+      margin-right: 20px;
+      @media screen and (max-width: 569px) {
+        display: block;
+      }
+    }
   }
 
   &__text {
@@ -90,6 +134,11 @@
     text-transform: uppercase;
     margin-left: 30px;
     max-width: 190px;
+
+    @media screen and (max-width: 569px) {
+      font-weight: 400;
+      margin-left: 0;
+    }
   }
 
   &__list-main {

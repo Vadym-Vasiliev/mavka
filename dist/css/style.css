@@ -988,24 +988,40 @@ body {
   padding-top: 300px;
   padding-bottom: 300px;
 }
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 569px) {
   .instruments {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 
 .instruments-content__title {
   margin-bottom: 50px;
 }
-@media screen and (max-width: 569px) {
-  .instruments-content__title {
-    text-align: center;
+.instruments-content__title--db {
+  display: none;
+}
+@media screen and (max-width: 499px) {
+  .instruments-content__title--db {
+    display: block;
+  }
+}
+@media screen and (max-width: 499px) {
+  .instruments-content__title--dn {
+    display: none;
   }
 }
 @media screen and (max-width: 659px) {
   .instruments-content__title {
     font-size: 48px;
+  }
+}
+@media screen and (max-width: 569px) {
+  .instruments-content__title {
+    font-size: 55px;
+    margin-bottom: 70px;
+    width: 240px;
+    line-height: 1.09;
   }
 }
 
@@ -1014,7 +1030,7 @@ body {
   flex-wrap: wrap;
   column-gap: 140px;
 }
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 569px) {
   .instruments-content-list {
     justify-content: center;
   }
@@ -1022,6 +1038,8 @@ body {
 @media screen and (max-width: 569px) {
   .instruments-content-list {
     justify-content: center;
+    margin-left: 60px;
+    row-gap: 30px;
   }
 }
 .instruments-content-list__item {
@@ -1035,16 +1053,6 @@ body {
   padding-right: 110px;
   width: 630px;
 }
-@media screen and (max-width: 499px) {
-  .instruments-content-list__item {
-    padding: 40px 50px;
-  }
-}
-@media screen and (max-width: 499px) {
-  .instruments-content-list__item {
-    width: 350px;
-  }
-}
 @media screen and (max-width: 659px) {
   .instruments-content-list__item {
     width: 550px;
@@ -1053,6 +1061,22 @@ body {
 @media screen and (max-width: 569px) {
   .instruments-content-list__item {
     width: 380px;
+  }
+}
+@media screen and (max-width: 569px) {
+  .instruments-content-list__item {
+    padding: 0;
+    padding-bottom: 30px;
+    width: 350px;
+    border: none;
+    max-width: 285px;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .instruments-content-list__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 .instruments-content-list__item--w {
@@ -1073,8 +1097,28 @@ body {
     width: 380px;
   }
 }
+@media screen and (max-width: 569px) {
+  .instruments-content-list__item--w:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .instruments-content-list__logo {
   width: 50px;
+}
+@media screen and (max-width: 569px) {
+  .instruments-content-list__logo {
+    display: none;
+  }
+}
+.instruments-content-list__logo--mob {
+  display: none;
+  width: 26px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 569px) {
+  .instruments-content-list__logo--mob {
+    display: block;
+  }
 }
 .instruments-content-list__text {
   font-weight: 600;
@@ -1083,6 +1127,12 @@ body {
   text-transform: uppercase;
   margin-left: 30px;
   max-width: 190px;
+}
+@media screen and (max-width: 569px) {
+  .instruments-content-list__text {
+    font-weight: 400;
+    margin-left: 0;
+  }
 }
 .instruments-content-list__list-main--mb {
   margin-top: 190px;
