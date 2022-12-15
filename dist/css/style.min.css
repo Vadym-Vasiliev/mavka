@@ -1353,24 +1353,38 @@ body {
 }
 @media screen and (max-width: 1049px) {
   .also-body-left {
-    justify-content: start;
-  }
-}
-@media screen and (max-width: 659px) {
-  .also-body-left {
-    justify-content: start;
-  }
-}
-@media screen and (max-width: 569px) {
-  .also-body-left {
-    justify-content: start;
-    row-gap: 100px;
-  }
-}
-@media screen and (max-width: 499px) {
-  .also-body-left {
     justify-content: center;
   }
+}
+.also-body-left__list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.also-body-left__img-mob {
+  width: 345px;
+  display: none;
+}
+@media screen and (max-width: 659px) {
+  .also-body-left__img-mob {
+    display: block;
+  }
+}
+.also-body-left__img-mob--dn {
+  display: none;
+}
+.also-body-left__text-mob {
+  margin-left: auto;
+  display: none;
+}
+@media screen and (max-width: 659px) {
+  .also-body-left__text-mob {
+    display: block;
+    max-width: 262px;
+  }
+}
+.also-body-left__text-mob--right {
+  text-align: right;
 }
 .also-body-left__content {
   max-width: 330px;
@@ -1389,12 +1403,12 @@ body {
 @media screen and (max-width: 659px) {
   .also-body-left__content {
     margin-bottom: 100px;
+    margin-right: auto;
   }
 }
 @media screen and (max-width: 499px) {
   .also-body-left__content {
-    text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 30;
   }
 }
 .also-body-left__title {
@@ -1402,7 +1416,8 @@ body {
 }
 @media screen and (max-width: 499px) {
   .also-body-left__title {
-    font-size: 60px;
+    font-size: 55px;
+    margin-bottom: 15px;
   }
 }
 .also-body-left__text {
@@ -1413,7 +1428,8 @@ body {
 }
 @media screen and (max-width: 499px) {
   .also-body-left__text {
-    font-size: 18px;
+    font-size: 16px;
+    max-width: 226px;
   }
 }
 .also-body-left__img--1 {
@@ -1423,6 +1439,11 @@ body {
 @media screen and (max-width: 1049px) {
   .also-body-left__img--1 {
     margin-left: auto;
+  }
+}
+@media screen and (max-width: 659px) {
+  .also-body-left__img--1 {
+    display: none;
   }
 }
 @media screen and (max-width: 499px) {
@@ -1438,6 +1459,7 @@ body {
 @media screen and (max-width: 659px) {
   .also-body-left__img--2 {
     width: 540px;
+    display: none;
   }
 }
 @media screen and (max-width: 569px) {
@@ -1456,6 +1478,11 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 659px) {
+  .also-body-right {
+    display: none;
+  }
 }
 .also-body-right::before {
   content: "";
@@ -1525,6 +1552,7 @@ body {
 @media screen and (max-width: 659px) {
   .also-body-right__text {
     margin-bottom: 110px;
+    display: block;
   }
 }
 @media screen and (max-width: 499px) {
