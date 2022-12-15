@@ -713,13 +713,7 @@ body {
 }
 @media screen and (max-width: 499px) {
   .services {
-    padding-bottom: 150px;
-  }
-}
-
-@media screen and (max-width: 569px) {
-  .services-content {
-    text-align: center;
+    padding-bottom: 235px;
   }
 }
 
@@ -736,6 +730,11 @@ body {
     margin-bottom: 100px;
   }
 }
+@media screen and (max-width: 499px) {
+  .services-content-top__title {
+    font-size: 35px;
+  }
+}
 
 .services-content-list {
   display: flex;
@@ -746,6 +745,12 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 100px;
+  }
+}
+@media screen and (max-width: 569px) {
+  .services-content-list {
+    justify-content: normal;
+    row-gap: 220px;
   }
 }
 .services-content-list__item {
@@ -763,9 +768,20 @@ body {
   z-index: -2;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
-@media screen and (max-width: 559px) {
+@media screen and (max-width: 569px) {
   .services-content-list__item--left::before {
-    display: none;
+    width: 710px;
+    height: 710px;
+    left: -200px;
+    top: -140px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .services-content-list__item--left::before {
+    width: 610px;
+    height: 610px;
+    left: -200px;
+    top: -140px;
   }
 }
 .services-content-list__item--mt {
@@ -782,9 +798,20 @@ body {
   z-index: -1;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
-@media screen and (max-width: 559px) {
+@media screen and (max-width: 569px) {
   .services-content-list__item--mt::before {
-    display: none;
+    width: 710px;
+    height: 710px;
+    left: -220px;
+    top: -120px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .services-content-list__item--mt::before {
+    width: 610px;
+    height: 610px;
+    left: -220px;
+    top: -120px;
   }
 }
 @media screen and (max-width: 569px) {
@@ -795,6 +822,11 @@ body {
 .services-content-list__second-list {
   margin-bottom: 50px;
 }
+@media screen and (max-width: 569px) {
+  .services-content-list__second-list {
+    margin-bottom: 30px;
+  }
+}
 .services-content-list__second-item:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -802,6 +834,11 @@ body {
   font-size: 16px;
   line-height: 1.56;
   text-transform: uppercase;
+}
+@media screen and (max-width: 569px) {
+  .services-content-list__text {
+    font-size: 14px;
+  }
 }
 .services-content-list__title {
   font-weight: 600;
@@ -812,7 +849,8 @@ body {
 }
 @media screen and (max-width: 499px) {
   .services-content-list__title {
-    font-size: 50px;
+    font-size: 35px;
+    margin-bottom: 30px;
   }
 }
 .services-content-list__contact {
