@@ -409,6 +409,12 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+@media screen and (max-width: 499px) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
 
 .header-content {
   display: flex;
@@ -525,7 +531,7 @@ body {
 @media screen and (max-width: 499px) {
   .main-content__text {
     font-size: 18px;
-    max-width: 164px;
+    max-width: 226px;
   }
 }
 
@@ -604,8 +610,12 @@ body {
 }
 @media screen and (max-width: 569px) {
   .about {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-bottom: 130px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .about {
+    padding-top: 200px;
   }
 }
 
@@ -621,7 +631,8 @@ body {
 }
 @media screen and (max-width: 499px) {
   .about-content {
-    row-gap: 90px;
+    row-gap: 30px;
+    justify-content: normal;
   }
 }
 
@@ -632,7 +643,6 @@ body {
 @media screen and (max-width: 499px) {
   .about-content-left__content {
     margin-right: 0;
-    text-align: center;
   }
 }
 .about-content-left__title {
@@ -644,7 +654,8 @@ body {
 }
 @media screen and (max-width: 499px) {
   .about-content-left__title {
-    font-size: 60px;
+    font-size: 55px;
+    margin-bottom: 15px;
   }
 }
 .about-content-left__text {
@@ -655,7 +666,8 @@ body {
 }
 @media screen and (max-width: 499px) {
   .about-content-left__text {
-    font-size: 18px;
+    font-size: 16px;
+    max-width: 226px;
   }
 }
 
@@ -672,18 +684,21 @@ body {
   display: flex;
 }
 .about-content-right__text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.56;
   letter-spacing: -0.03em;
   max-width: 300px;
   margin-top: auto;
   margin-left: 140px;
+  text-transform: lowercase;
   color: #cecdcc;
 }
 @media screen and (max-width: 499px) {
   .about-content-right__text {
-    text-align: center;
-    margin-left: 0;
+    max-width: 260px;
+    text-align: right;
+    margin-left: 100px;
   }
 }
 
@@ -1522,8 +1537,12 @@ body {
   padding-bottom: 100px;
 }
 @media screen and (max-width: 499px) {
+  .main--about {
+    padding-top: 130px;
+  }
+}
+@media screen and (max-width: 499px) {
   .main {
-    padding-top: 260px;
     padding-bottom: 350px;
   }
 }
