@@ -23,25 +23,10 @@
     font-size: 170px;
     line-height: 1.5;
     text-transform: lowercase;
+    white-space: nowrap;
 
     @media screen and (max-width: 1319px) {
-      font-size: 106px;
-    }
-
-    @media screen and (max-width: 1049px) {
-      font-size: 64px;
-    }
-
-    @media screen and (max-width: 659px) {
-      font-size: 56px;
-    }
-
-    @media screen and (max-width: 569px) {
-      font-size: 48px;
-    }
-
-    @media screen and (max-width: 499px) {
-      font-size: 35px;
+      font-size: 120px;
     }
 
     &:not(:last-child) {
