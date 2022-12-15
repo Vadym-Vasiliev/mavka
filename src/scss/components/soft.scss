@@ -1,5 +1,9 @@
 .soft {
   padding-bottom: 100px;
+
+  @media screen and (max-width: 499px) {
+    padding-bottom: 50px;
+  }
 }
 
 .soft-content {
@@ -8,18 +12,21 @@
   max-width: 915px;
 
   @media screen and (max-width: 499px) {
-    text-align: center;
     flex-direction: column;
     row-gap: 50px;
   }
 
   &__title {
     @media screen and (max-width: 499px) {
-      font-size: 60px;
+      font-size: 55px;
     }
   }
 }
 .soft-content-list {
+  @media screen and (max-width: 499px) {
+    max-width: 131px;
+    margin-left: 120px;
+  }
   &__item {
     &:not(:last-child) {
       margin-bottom: 10px;
@@ -30,5 +37,9 @@
     font-size: 16px;
     line-height: 1.56;
     text-transform: uppercase;
+
+    @media screen and (max-width: 499px) {
+      font-size: 14px;
+    }
   }
 }

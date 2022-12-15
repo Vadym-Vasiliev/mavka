@@ -886,6 +886,11 @@ body {
 .soft {
   padding-bottom: 100px;
 }
+@media screen and (max-width: 499px) {
+  .soft {
+    padding-bottom: 50px;
+  }
+}
 
 .soft-content {
   display: flex;
@@ -894,17 +899,22 @@ body {
 }
 @media screen and (max-width: 499px) {
   .soft-content {
-    text-align: center;
     flex-direction: column;
     row-gap: 50px;
   }
 }
 @media screen and (max-width: 499px) {
   .soft-content__title {
-    font-size: 60px;
+    font-size: 55px;
   }
 }
 
+@media screen and (max-width: 499px) {
+  .soft-content-list {
+    max-width: 131px;
+    margin-left: 120px;
+  }
+}
 .soft-content-list__item:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -912,6 +922,11 @@ body {
   font-size: 16px;
   line-height: 1.56;
   text-transform: uppercase;
+}
+@media screen and (max-width: 499px) {
+  .soft-content-list__text {
+    font-size: 14px;
+  }
 }
 
 .line-bot {
