@@ -8,9 +8,6 @@
 }
 
 .experience-content {
-  @media screen and (max-width: 499px) {
-    text-align: center;
-  }
   &__title {
     margin-bottom: 150px;
 
@@ -18,10 +15,21 @@
       font-size: 70px;
     }
 
-    @media screen and (max-width: 499px) {
+    @media screen and (max-width: 569px) {
       text-align: center;
       font-size: 48px;
-      margin-bottom: 100px;
+      margin-bottom: 55px;
+      display: none;
+    }
+
+    &--db {
+      display: none;
+      @media screen and (max-width: 569px) {
+        display: block;
+        font-size: 55px;
+        max-width: 310px;
+        text-align: left;
+      }
     }
   }
 }
@@ -35,6 +43,11 @@
   column-gap: 40px;
   row-gap: 100px;
 
+  @media screen and (max-width: 569px) {
+    row-gap: 150px;
+    border-left: 1px solid $white-03;
+    padding-left: 60px;
+  }
   &::after {
     content: "";
     position: absolute;
@@ -47,10 +60,6 @@
     @media screen and (max-width: 1319px) {
       display: none;
     }
-  }
-
-  @media screen and (max-width: 499px) {
-    justify-content: center;
   }
 
   &__item {
@@ -67,6 +76,9 @@
     margin-bottom: 5px;
 
     color: $white-05;
+    @media screen and (max-width: 569px) {
+      font-size: 16px;
+    }
   }
 
   &__text {
@@ -76,9 +88,10 @@
     text-transform: uppercase;
     margin-bottom: 108px;
 
-    @media screen and (max-width: 499px) {
-      font-size: 30px;
-      margin-bottom: 60px;
+    @media screen and (max-width: 569px) {
+      font-size: 35px;
+      margin-bottom: 50px;
+      max-width: 260px;
     }
   }
 
@@ -89,6 +102,67 @@
     text-transform: uppercase;
 
     color: $white-05;
+
+    @media screen and (max-width: 569px) {
+      font-size: 16px;
+    }
+
+    &--line1 {
+      bottom: 140px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 140px;
+        width: 284px;
+        z-index: -1;
+        border: 1px solid $white-03;
+        display: none;
+
+        @media screen and (max-width: 569px) {
+          display: block;
+        }
+      }
+    }
+
+    &--line2 {
+      bottom: 140px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 480px;
+        width: 284px;
+        z-index: -1;
+        border: 1px solid $white-03;
+        display: none;
+
+        @media screen and (max-width: 569px) {
+          display: block;
+        }
+      }
+    }
+
+    &--line3 {
+      bottom: 140px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 820px;
+        width: 284px;
+        z-index: -1;
+        border: 1px solid $white-03;
+        display: none;
+
+        @media screen and (max-width: 569px) {
+          display: block;
+        }
+      }
+    }
 
     &::before {
       content: "";
