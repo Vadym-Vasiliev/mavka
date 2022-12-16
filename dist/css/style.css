@@ -1334,7 +1334,7 @@ body.menu-header--active {
   top: 113px;
   height: 50px;
   z-index: -1;
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
 }
 @media screen and (max-width: 1319px) {
   .experience-content-list__data::before {
@@ -1376,6 +1376,13 @@ body.menu-header--active {
     justify-content: center;
   }
 }
+@media screen and (max-width: 659px) {
+  .also-body-left {
+    max-width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
 .also-body-left__list {
   display: flex;
   align-items: center;
@@ -1388,10 +1395,9 @@ body.menu-header--active {
 @media screen and (max-width: 659px) {
   .also-body-left__img-mob {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-}
-.also-body-left__img-mob--dn {
-  display: none;
 }
 .also-body-left__text-mob {
   margin-left: auto;
@@ -1401,6 +1407,7 @@ body.menu-header--active {
   .also-body-left__text-mob {
     display: block;
     max-width: 226px;
+    margin-top: 10px;
   }
 }
 .also-body-left__text-mob--right {
@@ -1428,7 +1435,7 @@ body.menu-header--active {
 }
 @media screen and (max-width: 499px) {
   .also-body-left__content {
-    margin-bottom: 30;
+    margin-bottom: 30px;
   }
 }
 .also-body-left__title {
@@ -1578,6 +1585,17 @@ body.menu-header--active {
 @media screen and (max-width: 499px) {
   .also-body-right__text {
     font-size: 18px;
+  }
+}
+
+.swiper {
+  display: none;
+}
+@media screen and (max-width: 659px) {
+  .swiper {
+    display: block;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
 
@@ -1814,17 +1832,6 @@ body.menu-header--active {
 }
 .fonts-list__item:not(:last-child) {
   margin-bottom: 100px;
-}
-.fonts-list__item:hover .fonts-list__top, .fonts-list__item:focus .fonts-list__top {
-  display: block;
-}
-@media screen and (max-width: 499px) {
-  .fonts-list__item:hover .fonts-list__top, .fonts-list__item:focus .fonts-list__top {
-    display: none;
-  }
-}
-.fonts-list__item:hover .fonts-list__item, .fonts-list__item:focus .fonts-list__item {
-  padding-top: 10px;
 }
 .fonts-list__link {
   position: absolute;
