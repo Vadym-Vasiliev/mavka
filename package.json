@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Vadym-Vasiliev/first-gulp#readme",
   "dependencies": {
+    "aos": "^2.3.4",
     "gulp-cli": "^2.3.0",
     "swiper": "^8.4.5"
   },

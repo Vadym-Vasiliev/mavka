@@ -8,7 +8,7 @@ body {
   color: $white;
   background-color: $black;
 
-  &--active {
+  &.menu-header--active {
     overflow: hidden;
   }
 }

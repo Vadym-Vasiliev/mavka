@@ -383,7 +383,7 @@ body {
   color: #ffffff;
   background-color: #000000;
 }
-body--active {
+body.menu-header--active {
   overflow: hidden;
 }
 
@@ -615,6 +615,7 @@ body--active {
   font-size: 170px;
   line-height: 1.5;
   text-transform: lowercase;
+  color: rgba(255, 255, 255, 0.3);
   white-space: nowrap;
 }
 @media screen and (max-width: 1319px) {
@@ -918,6 +919,7 @@ body--active {
 }
 .services-content-list__arrow {
   width: 14px;
+  margin-bottom: 3.3px;
 }
 
 .soft {
