@@ -1398,7 +1398,7 @@ body--active {
 @media screen and (max-width: 659px) {
   .also-body-left__text-mob {
     display: block;
-    max-width: 262px;
+    max-width: 226px;
   }
 }
 .also-body-left__text-mob--right {
