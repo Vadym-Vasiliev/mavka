@@ -1594,8 +1594,7 @@ body.menu-header--active {
 @media screen and (max-width: 659px) {
   .swiper {
     display: block;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    width: 100%;
   }
 }
 
