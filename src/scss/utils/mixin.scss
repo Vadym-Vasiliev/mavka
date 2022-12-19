@@ -22,6 +22,18 @@
   }
 }
 
+@mixin mobile {
+  @media screen and (max-width: 699px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 899px) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media screen and (max-width: 1049px) {
     @content;
