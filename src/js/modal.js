@@ -1,3 +1,3 @@
 const cross = document.querySelector(".popup__cross");
-const item = document.querySelectorAll(".popup-list__item");
-console.log(cross);
+const items = document.querySelectorAll(".popup-list__item");
+const links = document.querySelectorAll(".fonts-list__link");

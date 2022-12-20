@@ -2155,6 +2155,11 @@ body.menu-header--active {
   z-index: 4;
   color: #ffffff;
 }
+@media screen and (max-width: 699px) {
+  .popup__cross {
+    right: 15px;
+  }
+}
 .popup__content {
   width: 850px;
   margin-left: auto;
