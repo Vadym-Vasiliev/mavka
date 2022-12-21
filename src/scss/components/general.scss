@@ -11,6 +11,10 @@ body {
   &.menu-header--active {
     overflow: hidden;
   }
+
+  &.popup-visible {
+    overflow: hidden;
+  }
 }
 
 .wrapper {

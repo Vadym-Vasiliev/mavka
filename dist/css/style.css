@@ -386,6 +386,9 @@ body {
 body.menu-header--active {
   overflow: hidden;
 }
+body.popup-visible {
+  overflow: hidden;
+}
 
 .wrapper {
   display: flex;
@@ -1840,7 +1843,6 @@ body.menu-header--active {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -1;
 }
 .fonts-list__img {
   width: 520px;
@@ -2128,6 +2130,10 @@ body.menu-header--active {
   overflow-x: hidden;
   z-index: 3;
   background-color: #ffffff;
+  display: none;
+}
+.popup--visible {
+  display: block;
 }
 .popup::before {
   content: "";
