@@ -19,9 +19,14 @@ links.forEach((link) => {
     const dataProject = link.dataset.project;
     const dataText = link.dataset.text;
     const dataNumber = link.dataset.number;
+    const dataPreview2 = link.dataset.preview2;
 
     const previewImg = dataPreview
       ? `<img class="mockup__img mockup__img--preview" src="${dataPreview}"/>`
+      : "";
+
+    const previewImg2 = dataPreview2
+      ? `<img class="mockup__img mockup__img--preview2" src="${dataPreview2}"/>`
       : "";
 
     content.innerHTML = `
@@ -31,6 +36,7 @@ links.forEach((link) => {
           <p class="mockup__text">${dataText}</p>
         </div>
         ${previewImg}
+        ${previewImg2}
         <img class="mockup__img mockup__img--project" src="${dataProject}"/>
       </div>
     `;
