@@ -2182,61 +2182,61 @@ body.popup-visible {
   }
 }
 
-.popup-list__item {
+.mockup__item {
   width: 850px;
 }
 @media screen and (max-width: 899px) {
-  .popup-list__item {
+  .mockup__item {
     width: 650px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (max-width: 699px) {
-  .popup-list__item {
+  .mockup__item {
     width: 345px;
   }
 }
-.popup-list__item--1 {
+.mockup__item--1 {
   display: none;
 }
-.popup-list__item--2 {
+.mockup__item--2 {
   display: none;
 }
-.popup-list__item--3 {
+.mockup__item--3 {
   display: none;
 }
-.popup-list__item--4 {
+.mockup__item--4 {
   display: none;
 }
-.popup-list__item--5 {
+.mockup__item--5 {
   display: none;
 }
-.popup-list__item--6 {
+.mockup__item--6 {
   display: block;
 }
-.popup-list__item--7 {
+.mockup__item--7 {
   display: none;
 }
-.popup-list__top {
+.mockup__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 899px) {
-  .popup-list__top {
+  .mockup__top {
     width: 650px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (max-width: 699px) {
-  .popup-list__top {
+  .mockup__top {
     width: 345px;
   }
 }
-.popup-list__number {
+.mockup__number {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.25;
@@ -2245,11 +2245,11 @@ body.popup-visible {
   color: #000000;
 }
 @media screen and (max-width: 699px) {
-  .popup-list__number {
+  .mockup__number {
     font-size: 16px;
   }
 }
-.popup-list__text {
+.mockup__text {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.25;
@@ -2260,34 +2260,34 @@ body.popup-visible {
   color: #000000;
 }
 @media screen and (max-width: 699px) {
-  .popup-list__text {
+  .mockup__text {
     font-size: 16px;
     max-width: 210px;
   }
 }
-.popup-list__img {
+.mockup__img {
   width: 850px;
   margin-left: auto;
   margin-right: auto;
 }
-.popup-list__img:not(:last-child) {
+.mockup__img:not(:last-child) {
   margin-bottom: 150px;
 }
 @media screen and (max-width: 699px) {
-  .popup-list__img:not(:last-child) {
+  .mockup__img:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 899px) {
-  .popup-list__img {
+  .mockup__img {
     width: 650px;
   }
 }
 @media screen and (max-width: 699px) {
-  .popup-list__img {
+  .mockup__img {
     width: 345px;
   }
 }
-.popup-list--mb {
+.mockup--mb {
   margin-bottom: 50px;
 }

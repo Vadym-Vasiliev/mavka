@@ -4,6 +4,7 @@ const popup = document.querySelector("#popup");
 const numberModal = document.querySelector(".popup-list__number");
 const textModal = document.querySelector(".popup-list__text");
 const projectModal = document.querySelector(".popup-list__img");
+const content = document.querySelector(".popup__content");
 
 cross.addEventListener("click", () => {
   popup.classList.remove("popup--visible");
@@ -14,15 +15,24 @@ links.forEach((link) => {
   link.addEventListener("click", (e) => {
     popup.classList.add("popup--visible");
     document.body.classList.add("popup-visible");
+    const dataPreview = link.dataset.preview;
+    const dataProject = link.dataset.project;
+    const dataText = link.dataset.text;
+    const dataNumber = link.dataset.number;
 
-    console.log(
-      link.dataset.number,
-      link.dataset.text,
-      link.dataset.preview,
-      link.dataset.project
-    );
-    // link.dataset.text;
-    // link.dataset.preview;
-    // link.dataset.project;
+    const previewImg = dataPreview
+      ? `<img class="mockup__img mockup__img--preview" src="${dataPreview}"/>`
+      : "";
+
+    content.innerHTML = `
+      <div class="mockup">
+        <div class="mockup__top">
+          <span class="mockup__number">${dataNumber}</span>
+          <p class="mockup__text">${dataText}</p>
+        </div>
+        ${previewImg}
+        <img class="mockup__img mockup__img--project" src="${dataProject}"/>
+      </div>
+    `;
   });
 });
