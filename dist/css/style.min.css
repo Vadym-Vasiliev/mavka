@@ -1601,6 +1601,14 @@ body.popup-visible {
   }
 }
 
+.swiper-pagination {
+  bottom: 0;
+  left: 0;
+  width: 20px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 .touch {
   padding-bottom: 250px;
 }

@@ -237,3 +237,12 @@
     width: 100%;
   }
 }
+
+.swiper-pagination {
+  bottom: 0;
+  left: 0;
+  width: 20px;
+  height: 1px;
+
+  background-color: $white-03;
+}
